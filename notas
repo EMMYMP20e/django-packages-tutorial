@@ -1,0 +1,41 @@
+virtualenv venv                         //Crear virtualenv
+.\Scripts\activate                      //Usar el virtualenv
+django-admin                            //Avaliable subcommands
+django-admin startproject putada        //Crea proyecto
+cd ..                                   //Pa tras
+
+
+python manage.py runserver              //Corre servidor
+python manage.py makemigrations
+python manage.py migrate                //las 2 cuando hay cambips en models
+python manage.py createsuperuser        //
+
+python manage.py startapp products      //crea app( página creo)
+python manage.py shell                  // shell de python
+
+
+
+//En shell
+from products.models import Product
+Product.objects.all()                   //Lista objetos
+Product.objects.Create(parametro='valor')//crea objeto
+obj=Product.objects.get(id=1)               //obtiene un objeto con id
+dir(obj)                                    //imprime metodos y propiendades del objeto
+
+
+
+//superuser: yo_mero
+//pass:1234
+
+//model-field-types
+//https://docs.djangoproject.com/en/3.0/ref/models/fields/#model-field-types
+
+//despues de modifical models:
+es mejor detener server y borrar pycache en migrations y la db, despues:
+makemigrations y migrate
+
+
+//Github
+
+ git clone https://...
+ 
