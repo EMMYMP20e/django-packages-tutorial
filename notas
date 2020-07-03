@@ -38,4 +38,6 @@ makemigrations y migrate
 //Github
 
  git clone https://...
+
+ git checkout -b nombre-de-rama             //nueva rama
  
