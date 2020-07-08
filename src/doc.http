@@ -1,0 +1,26 @@
+### Registration
+POST http://127.0.0.1:8000/auth/registration/ HTTP/1.1
+Content-Type: application/json
+
+ {
+     "username":"usuario2",
+     "password1":"xdxdxd123",
+     "password2":"xdxdxd123",
+     "email":"usuario2@correo.com"
+ }
+
+### Login
+POST http://127.0.0.1:8000/auth/login/ HTTP/1.1
+Content-Type: application/json
+
+ {
+     "username":"usuario2",
+     "password":"xdxdxd123",
+     "email":"usuario2@correo.com"
+ }
+
+ 
+### ME
+GET http://127.0.0.1:8000/me/ HTTP/1.1
+Content-Type: application/json
+#Authorization: Token  d883d0b000bfaa3d320b03c4ee7a354a4ac1528f
